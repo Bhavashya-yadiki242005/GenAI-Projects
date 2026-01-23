@@ -4,7 +4,7 @@ This repository contains a curated collection of end-to-end projects in Machine 
 
 The projects range from classical NLP techniques to advanced Agentic RAG systems, showcasing both foundational understanding and cutting-edge Generative AI workflows.
 
-Projects Overview
+###Projects Overview
 1. News Article Categorizer (NLP Text Classification)
 
 An automated system to classify news articles into predefined categories such as business, politics, sports, entertainment, and technology using traditional NLP and machine learning techniques.
