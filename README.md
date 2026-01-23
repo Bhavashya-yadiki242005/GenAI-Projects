@@ -113,6 +113,7 @@ An advanced **Agentic Retrieval-Augmented Generation (RAG)** system where an aut
 
 ## Repository Structure
 
+'''
 ├── News_Article_Categorizer/
 │ ├── README.md
 │ └── source_code
@@ -128,6 +129,10 @@ An advanced **Agentic Retrieval-Augmented Generation (RAG)** system where an aut
 ├── Agentic_RAG_LlamaIndex/
 │ ├── README.md
 │ └── source_code
+│
+└── README.md (Main Repository)
+
+'''
 
 
 Each project folder contains:
@@ -166,6 +171,3 @@ B.Tech Computer Science Engineering
 - Natural Language Processing
 - Generative AI
 - Agentic AI Systems
-
-│
-└── README.md (Main Repository)
