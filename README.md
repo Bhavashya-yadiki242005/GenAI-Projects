@@ -149,21 +149,10 @@ Each project folder contains:
 
 ---
 
-## Intended Audience
-- Recruiters and hiring managers
-- AI/ML engineers and researchers
-- Students exploring applied AI projects
-- Anyone interested in practical Generative AI systems
 
 ---
 
 ## Author
 
-**Bhavashya Chandra Yadiki**  
-B.Tech Computer Science Engineering  
+**Bhavashya Chandra Yadiki**   
 
-### Focus Areas
-- Machine Learning
-- Natural Language Processing
-- Generative AI
-- Agentic AI Systems
