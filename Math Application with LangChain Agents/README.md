@@ -5,20 +5,27 @@ It allows users to upload an image containing a math problem (printed or handwri
 
 Instead of manually typing questions from textbooks or worksheets, this app reads directly from images and performs reasoning using a Large Language Model.
 
-Key Features
+🚀 Key Features
 
-Upload math questions as images
+📸 Upload math questions as images
 
-OCR-based text extraction using Tesseract
+🔍 OCR-based text extraction using Tesseract
 
-Step-by-step math reasoning using LLMs
+🤖 Step-by-step math reasoning using LLMs
 
-LangChain-powered prompt handling
+🧠 LangChain-powered prompt handling
 
-Simple and interactive Gradio web UI
+🌐 Simple and interactive Gradio web UI
 
+🏗️ Project Architecture
+Math-LangChain-App/
+│
+├── app.py                 # Main application file
+├── README.md              # Project documentation
+├── requirements.txt       # Required dependencies
+└── sample_images/         # Sample input images (optional)
 
-Tech Stack Used
+🛠️ Tech Stack Used
 Component	Technology
 OCR	pytesseract
 Image Processing	Pillow (PIL)
@@ -26,14 +33,14 @@ LLM Reasoning	OpenAI GPT (via LangChain)
 Agent Framework	LangChain
 UI Framework	Gradio
 Language	Python
-Step 1: Install Dependencies
+📦 Step 1: Install Dependencies
 
 Install all required Python libraries using the command below:
 
 pip install langchain langchain-community langchain-openai openai duckduckgo-search ddgs pytesseract Pillow gradio
 
 
-Important:
+📌 Important:
 Make sure Tesseract OCR is installed on your system:
 
 Windows:
@@ -48,7 +55,7 @@ Mac:
 
 brew install tesseract
 
-Step 2: Environment Setup (API Key)
+🔑 Step 2: Environment Setup (API Key)
 
 Set your OpenAI API key as an environment variable.
 
@@ -68,9 +75,9 @@ Linux / Mac:
 export OPENAI_API_KEY="your-api-key"
 
 
-You may also replace OpenAI with Gemini or other supported LLMs.
+✅ You may also replace OpenAI with Gemini or other supported LLMs.
 
-Step 3: Import Libraries (Explanation of Each)
+📚 Step 3: Import Libraries (Explanation of Each)
 import gradio as gr
 from PIL import Image
 import pytesseract
@@ -92,7 +99,7 @@ LangChain Tools & Agents → Manages AI logic
 
 PromptTemplate → Formats structured prompts
 
-Step 4: Optical Character Recognition (OCR)
+🔍 Step 4: Optical Character Recognition (OCR)
 Cell Explanation
 def extract_text(image):
     return pytesseract.image_to_string(image)
@@ -105,7 +112,7 @@ Extracts readable text using OCR
 
 Returns raw text from the image
 
-Step 5: LLM Setup & Math Prompt
+🤖 Step 5: LLM Setup & Math Prompt
 llm = ChatOpenAI(model="gpt-4", temperature=0)
 
 Explanation:
@@ -136,7 +143,7 @@ Sends extracted text to the LLM
 
 Returns the final computed answer
 
-Step 6: Processing Pipeline (Core Logic)
+🔄 Step 6: Processing Pipeline (Core Logic)
 def process_image(image):
     text = extract_text(image)
     if not text.strip():
@@ -156,7 +163,7 @@ Sends question to LLM
 
 Returns both question + answer
 
-Step 7: Gradio Web Interface
+🌐 Step 7: Gradio Web Interface
 with gr.Blocks(css="footer {display:none !important;}") as demo:
 
 
@@ -187,7 +194,7 @@ clear_btn.click(lambda: "", None, output_box)
 
 Clears output on button click
 
-Step 8: Run the Application
+▶️ Step 8: Run the Application
 demo.launch(share=True)
 
 Output:
@@ -204,7 +211,7 @@ Webcam
 
 Clipboard paste
 
-Sample Output
+🖼️ Sample Output
 
 Upload a math question image
 
@@ -212,7 +219,7 @@ Extracted text is displayed
 
 Final answer is shown clearly
 
-Use Cases
+🎯 Use Cases
 
 Students solving textbook problems
 
@@ -224,19 +231,18 @@ Accessibility for handwritten notes
 
 AI-based education tools
 
-Future Enhancements
+🚀 Future Enhancements
 
-Show step-by-step reasoning
+✅ Show step-by-step reasoning
 
-Advanced math tools (symbolic math)
+🧮 Advanced math tools (symbolic math)
 
-Voice input support
+🗣️ Voice input support
 
-Mobile-friendly UI
+📱 Mobile-friendly UI
 
-Agent-based tool routing
+🧠 Agent-based tool routing
 
-Conclusion
+📌 Conclusion
 
 This project demonstrates how LangChain Agents + OCR + LLMs can be combined to build a real-world AI application.
-It showcases skills in AI reasoning, multimodal input handling, and web deployment, making it ideal for final-year projects and resumes.
