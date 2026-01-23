@@ -32,21 +32,30 @@ Retrieval	Vector embeddings
 Memory	Conversation Buffer
 External Knowledge	Wikipedia
 Language	Python
-🏗️ System Architecture
-User Query
-   ↓
-Agent (Decision Maker)
-   ↓
-Tool Selection
-   ├── Document Retriever (LlamaIndex)
-   ├── Calculator
-   └── Wikipedia
-   ↓
-LlamaIndex Query Engine
-   ↓
-LLM Reasoning
-   ↓
-Final Answer
+system_architecture:
+  flow:
+    - step: User Query
+    - step: Agent
+      description: >
+        Acts as the brain of the system.
+        Analyzes the query and decides which tool(s) to use.
+    - step: Tool Selection
+      tools:
+        - name: Document Retriever
+          description: Retrieves relevant information using LlamaIndex
+        - name: Calculator
+          description: Solves mathematical or numerical queries
+        - name: Wikipedia
+          description: Fetches factual information from Wikipedia
+    - step: LlamaIndex Query Engine
+      description: >
+        Combines retrieved documents and synthesizes relevant context.
+    - step: LLM Reasoning
+      description: >
+        Large Language Model reasons over retrieved context.
+    - step: Final Answer
+      description: Response returned to the user
+
 
 🔄 Working of the Agentic RAG System
 1️⃣ User Query
