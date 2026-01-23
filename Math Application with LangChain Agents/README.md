@@ -17,13 +17,6 @@ Instead of manually typing questions from textbooks or worksheets, this app read
 
 🌐 Simple and interactive Gradio web UI
 
-🏗️ Project Architecture
-Math-LangChain-App/
-│
-├── app.py                 # Main application file
-├── README.md              # Project documentation
-├── requirements.txt       # Required dependencies
-└── sample_images/         # Sample input images (optional)
 
 🛠️ Tech Stack Used
 Component	Technology
