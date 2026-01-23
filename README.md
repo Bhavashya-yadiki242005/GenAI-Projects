@@ -1,7 +1,6 @@
 # GenAI-Projects
 
-This repository contains a curated collection of end-to-end projects in Machine Learning, Natural Language Processing, Semantic Search, and Agentic AI systems.
-Each project is designed to demonstrate practical problem-solving skills, clear implementation, and real-world applicability using modern AI frameworks and tools.
+This repository contains a curated collection of end-to-end projects in Machine Learning, Natural Language Processing, Semantic Search, and Agentic AI systems. Each project is designed to demonstrate practical problem-solving skills, clear implementation, and real-world applicability using modern AI frameworks and tools.
 
 The projects range from classical NLP techniques to advanced Agentic RAG systems, showcasing both foundational understanding and cutting-edge Generative AI workflows.
 
@@ -148,7 +147,7 @@ Intelligent chatbots with reasoning capabilities
 
 Research and decision support systems
 
-'''Repository Structure
+Repository Structure
 ├── News_Article_Categorizer/
 │   ├── README.md
 │   └── source_code
@@ -165,7 +164,7 @@ Research and decision support systems
 │   ├── README.md
 │   └── source_code
 │
-└── README.md  (Main Repository)'''
+└── README.md  (Main Repository)
 
 
 Each project folder contains:
@@ -178,7 +177,7 @@ Clear instructions for setup and execution
 
 Skills Demonstrated
 
-Machine Learning & NLP fundamentals
+Machine Learning and NLP fundamentals
 
 Text preprocessing and feature engineering
 
@@ -206,4 +205,3 @@ Author
 
 Bhavashya Chandra Yadiki
 B.Tech Computer Science Engineering
-Focus Areas: Machine Learning, NLP, Generative AI, Agentic Systems
